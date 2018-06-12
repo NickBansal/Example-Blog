@@ -1,0 +1,18 @@
+<% include ./partials/header %>
+
+<h1>This is the index page</h1>
+
+
+<% blogs.forEach(function(data){ %>
+    <div class="container boxed">
+        <h1><%= data.title %></h1>
+        <img src="<%= data.image %>">
+        <p><%= data.body %></p>
+        <p><%= data.created %><%= data.author %></p>
+        <button><a href="/sun/<%= data._id %>">Read More</a></button>
+    </div>
+<% }) %>
+
+
+
+<% include ./partials/footer %>

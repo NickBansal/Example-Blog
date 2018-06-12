@@ -1,0 +1,14 @@
+<% include ./partials/header %>
+
+<div class="container boxed">
+    
+    <h1>Title: <%= foundBlog.title %></h1>
+    <img src="<%= foundBlog.image %>">
+    <h2><%= foundBlog.author %></h2>
+    <form action="/sun/<%= foundBlog._id %>?_method=DELETE" method="POST">
+        <button class="ui red basic button">DELETE</button>
+    </form>
+    
+</div>
+
+<% include ./partials/footer %>

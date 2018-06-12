@@ -1,0 +1,30 @@
+<% include ./partials/header %>
+
+<h1>This is the new form page</h1>
+
+<div class="container boxed">
+    <form class="ui form" action="/sun" method="POST">
+        <div class="field">
+            <label>Title</label>
+            <textarea type="text" name="blog[title]" placeholder="Title"></textarea>
+        </div>
+        <div class="field">
+            <label>Image</label>
+            <textarea type="text" name="blog[image]" placeholder="Image"></textarea>
+        </div>
+        <div class="field">
+            <label>Body</label>
+            <textarea type="text" name="blog[body]" placeholder="Body"></textarea>
+        </div>
+        <div class="field">
+            <label>Author</label>
+            <textarea type="text" name="blog[author]" placeholder="Author"></textarea>
+        </div>
+        <div class="field">
+            <label>Submit</label>
+            <input class="ui big teal basic button" type="submit">    
+        </div>
+    </form>
+</div>
+
+<% include ./partials/footer %>
